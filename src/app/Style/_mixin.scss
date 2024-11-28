@@ -1,0 +1,26 @@
+@mixin flex-box(
+  $flex-direction: row,
+  $justify: center,
+  $align: center,
+  $wrap: nowrap
+) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+@mixin border-radius($units: 16, $pos1: all, $pos2: null) {
+  @if $pos2 == null or $pos1 == "all" {
+    border-radius: calc($units / 16 * 1rem);
+  } @else {
+    border-#{$pos1}-#{$pos2}-radius: calc($units / 16 * 1rem);
+  }
+}
+@mixin position($position:absolute,$units1: none, $units2: none, $units3: none, $units4: none) {
+  position: $position;
+  top: calc($units1 / 16 * 1rem);
+  left: calc($units2 / 16 * 1rem);
+  right: calc($units3 / 16 * 1rem);
+  bottom: calc($units4 / 16 * 1rem);
+}

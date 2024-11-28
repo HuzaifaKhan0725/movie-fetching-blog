@@ -1,0 +1,17 @@
+.div-theme {
+	min-height: 100vh;
+	user-select: none;
+	transition: all 0.3s ease;
+	
+}
+
+
+
+html.dark .div-theme {
+	color: #f3f4f6;
+	background-color: red;
+} html.light .div-theme {
+        color: #222;
+        background-color: #c4c4c4;
+    }
+

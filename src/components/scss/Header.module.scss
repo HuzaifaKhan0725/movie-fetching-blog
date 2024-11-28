@@ -1,0 +1,40 @@
+@import "./_mixin";
+
+.main {
+	@include flex-box(row, none, none);
+	gap: 1rem;
+}
+.details {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	display: none;
+	@media (min-width: 640px) {
+		display: block;
+	}
+}
+
+
+.movie {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 700;
+  background-color: #475569; 
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	@include border-radius(8);
+}
+.main2 {
+	@include flex-box(row, none, center);
+	gap: 0.25rem;
+}
+.container {
+	@include flex-box(row, space-evenly, center);
+	height: 50px;
+	width: 100%;
+}
+.sub-container{
+	@include flex-box(row, none, center);
+	gap: 1rem;
+}

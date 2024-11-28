@@ -1,0 +1,15 @@
+.hover{
+
+  font-weight: 800;
+  &:hover{
+
+    color: #172554;
+  }
+}
+.active {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 4px;
+  text-decoration-color: #1e3a8a;  // blue-950 in Tailwind is close to #1e3a8a
+  border-radius: 1rem;  // xl border radius in Tailwind is 1rem
+}

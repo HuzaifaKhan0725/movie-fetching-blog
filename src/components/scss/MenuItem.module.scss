@@ -1,0 +1,25 @@
+.menu-item {
+	&:hover {
+		color: rgb(120 53 15  );
+	}
+}
+
+.icon {
+	font-size: 1.5rem;
+
+	display: block;
+	@media (min-width: 640px) {
+		display: none;
+	}
+}
+
+.title {
+	text-transform: uppercase;
+	display: none;
+
+	@media (min-width: 640px) {
+		display: inline;
+	}
+
+	font-size: 0.875rem;
+}

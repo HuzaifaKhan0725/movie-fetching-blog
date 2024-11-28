@@ -1,0 +1,60 @@
+.container {
+	width: 100%;
+}
+
+.movie-wrapper {
+	padding: 1rem;
+	padding-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 72rem;
+	margin: 0 auto;
+	gap: 1.5rem;
+
+	@media (min-width: 768px) {
+		flex-direction: row;
+	}
+}
+
+.movie-image {
+	border-radius: 0.5rem;
+	max-width: 500px;
+	height: 315px;
+	width: 100%;
+	margin: 15px 0 0 0;
+	box-shadow: 5px 8px 80px #464646;
+}
+
+.movie-details {
+	padding: 0.5rem;
+}
+
+.movie-title {
+	font-size: 1.125rem;
+	margin-bottom: 0.75rem;
+	font-weight: 800;
+	text-decoration: double underline;
+}
+
+.movie-overview {
+	font-size: 1.125rem;
+	margin-bottom: 0.75rem;
+}
+
+.release-info,
+.rating-info {
+	margin-bottom: 0.75rem;
+}
+
+.label {
+	font-weight: 600;
+	margin-right: 0.25rem;
+	text-decoration: underline;
+}
+.emptyIcon {
+	color: #6b7280;
+}
+.double-underline {
+	text-decoration: double underline;
+}
